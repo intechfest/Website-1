@@ -1,0 +1,430 @@
+*{
+    margin : 0px; 
+    padding : 0px; 
+    box-sizing: border-box;
+    font-family: Open Sans;
+    src: url('font/OpenSans-Regular.ttf');
+}
+h1{
+    font-family: 'Bebas Neue';
+    src : url(../font/BebasNeue-Regular.ttf);
+}
+
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+    top : 0; 
+    left: 5%;
+   
+}
+a {
+    text-decoration: none;
+}
+.container{
+    width : 100%; 
+
+}
+
+
+.logo-container, 
+.nav-links{
+    display: flex;
+}
+.logo-container{    
+    flex: 1;
+    font-family: 'Piedra';
+    letter-spacing: 0px;
+    color: #fa8f15;
+}
+.logo-container img{
+    width: 69px;
+    height: 50px;
+}
+.logo{
+    font-weight: 400;
+    margin: 13px;
+    font-family: Bebas Neue;
+    src : url('font/BebasNeue-Regular.ttf');
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+nav{
+    flex: 2; 
+}
+.nav-links{
+    justify-content: flex-end; 
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: #ff8b07;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity : .8; 
+    margin : 0 30px;
+}
+.nav-link:hover{
+    opacity : 1; 
+    color : #FF5C4D; 
+}
+
+#active { 
+    font-weight : bold;
+}
+.banner{
+    background-image: url(../img/aboutusjpg.jpg);
+    width: 100%;
+    height : 400px;
+    background-size : cover;
+    background-position : 0px 35%;
+}
+.banner-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10% ;
+}
+.banner h1{
+    letter-spacing: 5px;
+    color : #FF5C4D;
+}
+.banner p{
+    font-size: 12px;
+    padding-top: 3px ;
+    color : #999
+}
+.background{
+    background-color: rgba(148, 148, 148, 0.274) ;
+    min-height: 300px;
+    padding-top: 100px ;
+}
+.line {
+    width : 50px ; 
+    height: 5px;
+    background-color: #9F2B00;
+    margin-left: 14% ;
+}
+.title{
+    margin: 20px 0 0 5%;
+    width : 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.title h1{
+    display: flex;
+    flex: 1;
+    letter-spacing : 10px;
+    color: #FF5C4D;
+    font-size : 25px;
+    margin-left: 10%;
+}
+.title p{
+    display: flex;
+    flex : 1;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin-left: -140px;
+}
+.main-content{
+    width : 100%; 
+    height : 600px;
+    background-color: rgba(161, 157, 157, 0.363);
+    padding-top : 100px;
+}
+.hero img{
+    position: absolute;
+    width: 400px;
+    height : 600px;
+    box-shadow: 50px 50px 5px rgba(161, 157, 157, 0.513);
+    left: 10%;
+    margin-top: -100px
+}
+
+.content{
+    margin-left: 50%;
+}
+.content h1{
+    letter-spacing: 2px;
+    color : #FF5C4D;
+    padding-bottom: 40px;
+}
+.content p{
+    width : 85%;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.contactus{
+    width: 100%;
+    padding-top : 100px
+}
+.contactus-title{
+    width: 430px;
+    margin: auto;
+    text-align: center;
+
+}
+.contactus-title h1{
+    letter-spacing: 6px;
+    font-size: 40px;
+    color: #FF5C4D;
+}
+.contactus-title p{
+    font-size: 12px;
+    padding : 4px 0px;
+    color: #999;
+}
+.form-section{
+    width : 100%; 
+    background-color: rgba(161, 157, 157, 0.055);
+    height: 600px;
+}
+.form {
+    width: 400px;
+    box-shadow: 2px 2px 8px #999;
+    height : 450px;
+    margin-left: 50%;
+    background-color: white;
+   
+}
+.form form{
+    width : 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    
+}
+.form form label{
+    font-size: 15px;
+    padding : 10px 0px;
+    font-weight: bold;
+}
+.form form input, textarea{
+    height: 35px;
+    padding : 10px;
+    margin : 10px 0px;
+    border : 1px solid rgba(109, 108, 108, 0.322)
+}
+.form form textarea{
+    height: 100px;
+}
+.lower{
+   position: relative;
+   bottom: 300px;
+   width: 500px;
+   margin-left:20% ;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    border:1px solid#fa8f15; 
+    background : #fa8f15; 
+    color: #eaeaea; 
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 1px 1px 3px #fa8f15;
+    border-radius: 50px;
+    margin: 20px 0px 0px 0px;
+}
+
+footer{
+    margin-top: 300px;
+    width : 100%; 
+    min-height : 40vh ; 
+}
+.social {
+    display : flex; 
+    margin : 100px auto;
+    justify-content: space-evenly;
+    width: 300px;
+    cursor: pointer;
+}
+.navigation {
+    width : 100%; 
+}
+.nav-footer, footer p{
+    width : 400px;
+    display : flex;
+    justify-content : space-around; 
+    margin : 20px auto; 
+    list-style: none;
+}
+footer p , footer a{
+    color : #999
+}
+@media screen and (max-width : 1510px){
+        .lower{
+            margin-left: 10% ;
+        }
+}
+@media screen and (max-width : 1140px){
+    .background{
+        margin: auto;
+        background-color: rgba(148, 148, 148, 0.274) ;
+        min-height: 900px;
+        padding-top: 50px ;
+    }
+    .title{
+        margin: auto;
+        width : 90%;
+        display: block;
+        width: 430px;
+        text-align: justify;
+    }
+    .title h1{
+        margin-left: 0%;
+        margin-bottom: 10px;
+        
+    }
+    .title p{
+        margin-left: 0%;
+    }
+    .line {
+        display: none;
+    }
+    .hero {
+        margin : auto;
+        width : 430px;
+    }
+    .hero img{  
+        position: static;
+        width: 430px;
+        height : 550px;
+        box-shadow: 25px 25px 5px rgba(161, 157, 157, 0.513);
+        margin-top: -600px;
+        margin-left: auto;
+    }
+    .main-content{
+        width : 100%; 
+        height : 600px;
+        padding-top : 220px;
+        margin-top: -22px;
+    }
+    .content{
+        margin: auto;
+        width : 430px;
+        margin-top: -100px;
+    }
+    .content h1{
+        padding-bottom: 40px;
+    }
+    .content p{
+        line-height: 35px;
+        margin-bottom: 500px;
+    }
+    .form-section{
+        display: block;
+        flex-direction: column;
+        height : 900px
+    }
+    .lower{
+        position: static;
+        margin-top : 100px
+    }
+    .form, .form{
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 800px){
+    .logo-container img{
+        display: none;
+    }
+    .nav-link{
+        font-size: 12px;
+        margin : 0px 5px
+    }
+
+}
+@media screen and (max-width: 500px){
+    .title, .lower, .content{
+        width : 250px;
+        text-align : left; 
+    }
+    .nav-link{
+        font-size: 8px;
+        margin : 0px 5px
+    }
+    .hero{
+        margin-left: 15%;
+    }
+    .content p{
+        text-align: left;
+    }
+    .hero img{
+        width : 250px;
+        height : 380px;
+    }
+    .contactus-title{
+        width : 250px;
+    }
+    .form {
+        width: 250px;
+    }
+    .social{
+        width: 250px;
+    }
+    .nav-footer{
+        width :250px
+    }
+    footer p{
+        width: 250px;
+    }
+}
+@media screen and (max-width : 360px){
+    .hero{
+        margin: auto;
+        margin-left: 15%;
+    }
+}
+@media screen and (max-width : 320px){
+    .hero{
+        margin: auto;
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width : 300px){
+    .hero{
+        margin: auto;
+    }
+    .title, .lower, .content{
+        width : 250px;
+        text-align : left; 
+        margin: auto;
+    }
+    .hero{
+        margin : auto;
+    }
+    .content p{
+        text-align: left;
+    }
+    .hero img{
+        width : 200px;
+        height : 380px;
+        margin: auto;
+    }
+    .contactus-title{
+        width : 250px;
+    }
+    .form {
+        width: 250px;
+    }
+    .lower{
+        margin-top: 120px;
+    }
+    .social{
+        width: 250px;
+    }
+    .nav-footer{
+        width :250px
+    }
+    footer p{
+        width: 250px;
+    }
+}

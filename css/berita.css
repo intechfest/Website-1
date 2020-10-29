@@ -1,0 +1,484 @@
+*{
+    margin : 0px; 
+    padding : 0px; 
+    box-sizing: border-box;
+    font-family: Open Sans;
+    src: url('font/OpenSans-Regular.ttf');
+}
+
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+    top : 0; 
+    left: 5%;
+   
+}
+a {
+    text-decoration: none;
+}
+.container{
+    width : 100%; 
+
+}
+
+
+.logo-container, 
+.nav-links{
+    display: flex;
+}
+.logo-container{    
+    flex: 1;
+    font-family: 'Piedra';
+    letter-spacing: 0px;
+    color: #fa8f15;
+}
+.logo-container img{
+    width: 69px;
+    height: 50px;
+}
+.logo{
+    font-weight: 400;
+    margin: 13px;
+    font-family: Bebas Neue;
+    src : url('font/BebasNeue-Regular.ttf');
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+nav{
+    flex: 2; 
+}
+.nav-links{
+    justify-content: flex-end; 
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: #ff8b07;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity : .8; 
+    margin : 0 30px;
+}
+.nav-link:hover{
+    opacity : 1; 
+    color : #FF5C4D; 
+}
+
+#active { 
+    font-weight : bold;
+}
+.banner {
+    width:  100%;
+    margin: auto;
+    height: 600px;
+    overflow: hidden;
+    background: url('../img/vaccine3.jpg');
+    z-index: -1;
+    background-position: 0 25%;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.introduction{
+    width: 600px;
+    color: #eaeaeaea;
+    margin-top : 10%; 
+    margin-left: 15%;
+    z-index: 100;
+}
+.introduction h1{
+    cursor: pointer
+}
+.introduction .date{
+    margin-bottom: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    border:1px solid#fa8f15; 
+    background : #fa8f15; 
+    color: #eaeaea; 
+    cursor: pointer;
+    flex-wrap: wrap;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 1px 1px 3px #fa8f15;
+    border-radius: 50px;
+    margin: 30px 15%;
+}
+.btn:hover, .btn-news:hover{
+    color: #fa8f15; 
+    background: #eaeaea;
+}
+.btn:active, .btn-news:active{
+    transform: translateY(2px);
+}
+.title{
+    width:  100%;
+    margin: auto;
+}
+.title h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.line{
+    border-top: 1px solid rgba(253, 140, 12, 0.246); 
+    width : 70%;
+    margin: 30px auto;
+}
+.news {
+    display : flex;
+    width : 70%;
+    margin: auto;
+    justify-content: center;
+}
+.card{
+    width : 650px;
+    height : 150px;  
+    margin-top: 30px;
+    display : flex;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 10px ;
+    transition: .5s all ease;
+}
+.card:active{
+    transform: translateY(2px);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.news-content{
+    margin: 10px 70px;
+}
+.news-content h5{
+    margin-top : 20px;
+}
+.news-content p{
+    font-size: 12px;
+    color : #777;
+}
+.thumb img{
+    width : 220px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+
+.news-wrapper {  
+    width : 600px; 
+    height : 330px;
+    background-color : lightblue;
+    border-radius: 10px ;
+    background-image : url("../img/masker.jpg"); 
+    color : white;
+    margin: 30px 0px 0px 70px; 
+}
+
+
+.news-wrapper .text{
+    margin: 10% 8%;
+}
+.btn-news{
+    width: 150px;
+    height: 50px;
+    border:1px solid#fa8f15; 
+    background : #fa8f15; 
+    color: #eaeaea; 
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 1px 1px 3px #fa8f15;
+    border-radius: 50px;
+    margin: 5% 0px;
+}
+.text h4{
+    padding-top : 5px ;
+}
+.text p {
+    margin-bottom: 20px ;
+    color : rgb(255, 255, 255); 
+    font-size: 13px;
+}
+.auto { 
+    text-align: center;
+    margin-left: 13%;
+}
+#image1{
+    background-image: url(../img/vaccine1.jpg);
+    background-position: 300px -10px;
+}
+#image2{
+    background-image: url(../img/economy.jpg);
+    background-position: 500px -10px;
+}
+#image3{
+    background-image: url(../img/alcohol.jpg);
+    background-position: 400px -10px;
+}
+#image4{
+    background-image: url(../img/education.jpg);
+    background-position: 450px -10px;
+}
+#image1, #image2, #image3, #image4{
+    transition: .2s all ease-in-out;
+    background-size: cover;
+}
+#image1:hover,#image2:hover,#image3:hover,#image4:hover{
+    transform: scale(1.1);
+}
+#image1 .btn-news, #image2 .btn-news, #image3 .btn-news,#image4 .btn-news {
+    margin-top: 50px;
+}
+
+#image1 h1, #image2 h1, #image3 h1, #image4 h1 {
+    color: #ffffff;
+    background-color: rgba(1, 2, 3, .05);
+}
+
+footer{
+    margin-top: 300px;
+    width : 100%; 
+    min-height : 40vh ; 
+}
+.social {
+    display : flex; 
+    margin : 100px auto;
+    justify-content: space-evenly;
+    width: 300px;
+    cursor: pointer;
+}
+.navigation {
+    width : 100%; 
+}
+.nav-footer, footer p{
+    width : 400px;
+    display : flex;
+    justify-content : space-around; 
+    margin : 20px auto; 
+    list-style: none;
+}
+footer p , footer a{
+    color : #999
+}
+@media screen and (max-width: 1444px){
+    .card{
+        width : 520px;
+        height : 150px;  
+    }
+    .news-content h3{
+        font-size: 14px;
+    }
+    .news-content h5{
+        margin-top : 12px;
+        font-size: 11px;
+    }
+    .news-content p{
+        font-size: 10px;
+        color : #777;
+    }
+    .text h4{
+        padding-top : 5px ;
+        font-size: 10px;
+    }
+    .text p {
+        margin-bottom: 9px ;
+        font-size: 9px;
+    }
+    .text h1{
+        font-size : 28px
+    }
+    .news-wrapper {  
+        width : 600px; 
+        height : 330px;
+        background-color : lightblue;
+        border-radius: 10px ;
+        background-image : url("../img/masker.jpg"); 
+        color : white;
+        margin: 30px 0px 0px 70px; 
+    }
+    .news-wrapper .text h1{
+        font-size: 22px;
+    }
+    .btn-news{
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1210px){
+    .logo-container img{
+        display: none;
+    }
+    .card{
+        margin: 30px auto;
+    }
+    .news  {
+        display: flex;
+        flex-direction: column;
+    }
+    .news-wrapper{
+        width : 520px;
+        margin: 30px auto;
+    }
+    #image1{
+        background-position: -70px 0;
+    }
+    .lower h1{
+        width : 200px;
+        text-align : center;
+        margin : 20px auto
+    }
+    .lower .btn-news{
+        margin : auto ; 
+        margin-top: 10px;
+    }
+    .upper .btn-news{
+        margin-top: 20px;
+    }
+    .upper h1{
+        margin-top: 40px;
+    }
+    #image2 { 
+        background-position : 0px 0px;
+    }
+    #image3 {
+        background-position : 10% 0px; 
+    }
+    #image4{
+        background-position: -100px 0px;
+    }
+    
+}
+@media screen and (max-width: 750px){
+    .introduction{
+        margin: 150px auto 0px 9%;
+    }
+    .introduction h1 {
+        font-size: 28px;
+        width: 350px;
+    }
+    .btn{
+        margin-left: 9% ;
+    }
+    .nav-link {
+        font-size: 12px;
+        margin: 0px 5px;
+    }
+    .card{
+        width : 360px;
+        height : 150px;  
+       
+    }
+    .thumb img{
+        width : 190px;  
+        height : 150px;
+    }
+    .news-content{
+        margin: 10px 30px;
+    }
+    .news-content h3{
+        font-size: 12px;
+    }
+    .news-wrapper{
+        width: 360px;
+    }
+
+}
+@media screen and (max-width: 450px){
+    .news{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 399px){
+    .logo-container h3{
+        font-size: 10px;
+    }
+    .nav-link{
+        font-size: 9px;
+    }
+    .banner{
+        height : 400px;
+        background-position: -200px 0;
+    }
+    .introduction{
+        margin: 100px auto 0px 9%;
+    }
+    .date p{
+        font-size: 10px ;
+    }
+    .introduction h1 {
+        font-size: 16px;
+        width: 200px;
+    }
+    .btn{
+        width : 100px;
+        height : 30px;
+        font-size : 9px;
+        line-height: 29px;
+    }
+    .nav-links{
+        justify-content: flex-start;
+        margin-left: 5px;
+    }
+    .title h2{
+        font-size: 12px;
+    }
+    .line{
+        margin: 10px auto;
+    }
+    .card{
+        width : 250px;
+        height : 100px;
+    }
+    .thumb img {
+        width : 100%;
+        height : 100px;
+    }
+    .news-content h3 {
+        font-size: 7px;
+    }
+    .news-content h5, .news-content p{
+        font-size: 4px;
+    }
+    .news-wrapper{
+        width : 250px;
+    }
+    .news {
+        margin-left: auto;
+    }
+    .social, .navigation .nav-footer, .navigation p, .copyright p {
+        width : 200px;
+        margin-left: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+    .social img{
+        width : 20px
+    }
+    #image3 {
+        background-position: 300px 0;
+    }
+    
+}
+@media screen and (max-width: 280px){
+    .news{
+        margin: 0px 5%;
+    }
+    .social, .navigation .nav-footer, .navigation p, .copyright p {
+        margin-left: 40px;
+    }
+}
