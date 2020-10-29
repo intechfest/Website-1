@@ -594,8 +594,11 @@ footer p , footer a{
     .news{
         margin-top: 100px;
     }
+    .nav-links{
+        width : 250px
+    }
     .nav-link{
-        font-size: 14px;
+        font-size: 9px;
     }
     #upper-content{
         margin-bottom : 100px;
@@ -603,11 +606,24 @@ footer p , footer a{
     #lower-content {
         margin-bottom: 200px;    
     }
+    .nav-footer{
+        width : 200px;
+    }
+    .navigation p{
+        width : 200px;
+    }
+    .copyright {
+        width : 200px;
+        font-size : 9px;
+    }
 }
 
 @media screen and (max-width : 376px){
     #upper-content{
         margin-bottom: 200px;
+    }
+    .copyright {
+        margin-left : -6%   ;
     }
 }
 
@@ -657,6 +673,9 @@ footer p , footer a{
         list-style: none;
         text-align: center;
     }
+    .copyright {
+        margin-left : 11%   ;
+    }   
 
 }
 
