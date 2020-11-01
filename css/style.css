@@ -616,6 +616,7 @@ footer p , footer a{
         width : 200px;
         font-size : 9px;
     }
+    
 }
 
 @media screen and (max-width : 376px){
@@ -625,6 +626,16 @@ footer p , footer a{
     .copyright {
         margin-left : -6%   ;
     }
+    .introduction{
+        margin-left : auto;
+    }
+    .data{
+        margin-left : auto;
+    }
+    .logo{
+        font-size: 10px;
+        margin-left : 10px
+    }
 }
 
 @media screen and (max-width : 290px){
@@ -632,8 +643,22 @@ footer p , footer a{
         margin-bottom: 200px;
     }
     .introduction{
-        margin-left: 50%;
+        margin-left: 35%;
         width: 100%;
+    }
+    .cover img {
+        margin-left: -20px;
+    }
+    .card{
+        width : 200px;
+        height : fit-content;
+        margin-left: -30px;
+    }
+    .data{
+        margin-left: -20px ;
+    }
+    .box-content{
+        margin-left: -30px;
     }
     .cta .cta-submit, .cta .cta-news{
         width: 80px;
@@ -669,14 +694,14 @@ footer p , footer a{
     }
     .nav-footer, footer p{
         width : 200px;
-        margin : 20px 38%; 
+        margin : 20px 35%; 
         list-style: none;
         text-align: center;
     }
     .copyright {
         margin-left : 11%   ;
     }   
-
+    
 }
 
 
